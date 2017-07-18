@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/jjansen.INTRADM01/Documents/stm8/stm8.sch</source>
+    <date>7/06/2017 10:58:15</date>
+    <tool>Eeschema 4.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>stm8.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>STM8S003F3P</value>
+      <footprint>Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm</footprint>
+      <libsource lib="stm8" part="STM8S003F3P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59369BED</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5936C024</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CONN_01X04_MALE</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04_MALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5936C5F6</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_Small</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <libsource lib="device" part="LED_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5936CB1F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04_MALE">
+      <description>Generic Male Connector, single row, 01x04, pin header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04_MALE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED_Small">
+      <description>LED, small symbol</description>
+      <footprints>
+        <fp>LED-*</fp>
+        <fp>LED_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="stm8" part="STM8S003F3P">
+      <description>16MHz, 8K Flash, 1k RAM, 128 EEPROM, USART, I2C, SPI, TSSOP20</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf</docs>
+      <footprints>
+        <fp>TSSOP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM8S003F3P</field>
+        <field name="Footprint">Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PD4/TIM2_CH1/BEEP/UART1_CK" type="BiDi"/>
+        <pin num="2" name="PD5/AIN5/UART1_TX" type="BiDi"/>
+        <pin num="3" name="PD6/AIN6/UART1_RX" type="BiDi"/>
+        <pin num="4" name="NRST" type="input"/>
+        <pin num="5" name="OSCIN/PA1" type="BiDi"/>
+        <pin num="6" name="OSCOUT/PA2" type="BiDi"/>
+        <pin num="7" name="VSS" type="power_out"/>
+        <pin num="8" name="Vcap" type="passive"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="[SPI_NSS]TIM2_CH3/PA3" type="BiDi"/>
+        <pin num="11" name="[TIM1_BKIN]I2C_SDA/PB5" type="BiDi"/>
+        <pin num="12" name="[ADC_ETR]I2C_SCL/PB4" type="BiDi"/>
+        <pin num="13" name="[TIM1_CH1N]TIM1_CH3/PC3" type="BiDi"/>
+        <pin num="14" name="[TIM1_CH2N]AIN2/TIM1_CH4/PC4" type="BiDi"/>
+        <pin num="15" name="[TIM2_CH1]SPI_SCK/PC5" type="BiDi"/>
+        <pin num="16" name="[TIM1_CH1]SPI_MOSI/PC6" type="BiDi"/>
+        <pin num="17" name="[TIM1_CH2]SPI_MISO/PC7" type="BiDi"/>
+        <pin num="18" name="PD1/SWIM" type="BiDi"/>
+        <pin num="19" name="PD2/AIN3[TIM2_CH3]" type="BiDi"/>
+        <pin num="20" name="PD3/AIN4/TIM2_CH2" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="stm8">
+      <uri>C:\Program Files (x86)\KiCad\share\kicad\library\stm8.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files (x86)\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files (x86)\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad3)">
+      <node ref="U1" pin="18"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="2" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="9" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="10" name="+3V3">
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="20" name="GND">
+      <node ref="U1" pin="7"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="C1" pin="2"/>
+    </net>
+  </nets>
+</export>
