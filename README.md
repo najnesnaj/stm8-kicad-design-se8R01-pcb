@@ -10,3 +10,6 @@ I bought everything from a well known chinese website.
 
 The most expensive part was the PCB board -- 7 dollar for 3 boards.
 
+The file stm8.pdf describes the connections, which I use in the programming.
+
+
